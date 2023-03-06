@@ -1,0 +1,12 @@
+<template>
+    <lightning-button label="get Contacts" onclick={handleClick} variant="brand"></lightning-button>
+  
+    <lightning-card title="ImperativeApexCall" icon-name="custom:custom63">
+        <div class="slds-m-around-medium">
+            <template for:each={contacts} for:item="con">
+                <p key={con.Id}>{con.Name}</p>
+            </template>
+        </div>
+    </lightning-card>
+    
+</template>

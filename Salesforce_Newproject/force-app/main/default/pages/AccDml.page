@@ -1,0 +1,13 @@
+<apex:page >
+    <apex:form >
+    	<apex:pageBlock title="Enter New Account">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="submit" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="4">
+            Name: <apex:inputText />  
+            Phone: <apex:inputText /> 
+            </apex:pageBlockSection>
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

@@ -1,0 +1,12 @@
+<apex:page controller="MultipleRowsController">
+    <apex:form >
+        <apex:dataTable value="{!leads}" var="ld" cellpadding="5">
+            <apex:column headerValue="Name" >
+                <apex:inputText value="{!ld.lastName}"/>
+            </apex:column>
+            <apex:column headerValue="Email" >
+                <apex:inputText value="{!ld.email}"/>
+            </apex:column>
+        </apex:dataTable>
+    </apex:form>
+</apex:page>

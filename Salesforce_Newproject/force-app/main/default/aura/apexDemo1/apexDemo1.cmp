@@ -1,0 +1,24 @@
+<aura:component controller="AccountController" >
+    <aura:attribute name="acc" type="Account"></aura:attribute>
+    <lightning:button onclick="{!c.handleCall}" label="cal Apex Now" variant="brand"></lightning:button>
+    
+    <lightning:card title="{!v.acc.Name}" iconName="standard:account" footer="copyRight, @2022">
+        <lightning:layout>
+            <lightning:layoutItem>
+                <p class="slds-p-around_medium"><lightning:formattedText value="{!v.acc.Name}"></lightning:formattedText></p>
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem>
+                <p class="slds-p-around_medium"><lightning:formattedText value="{!v.acc.Industry}"></lightning:formattedText></p>
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem>
+                <p class="slds-p-around_medium"><lightning:formattedText value="{!v.acc.Insustry}"></lightning:formattedText></p>
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem>
+                <p class="slds-p-around_medium"><lightning:formattedText value="{!v.acc.Phone}"></lightning:formattedText></p>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>

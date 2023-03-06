@@ -1,0 +1,13 @@
+<apex:page controller="DevUseCase3536">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+            	<apex:commandButton action="{!insertAcc}" value="Save"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!a.Name}"/>
+                <apex:inputField value="{!a.Phone}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

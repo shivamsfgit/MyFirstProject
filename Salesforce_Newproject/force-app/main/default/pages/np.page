@@ -1,0 +1,33 @@
+<apex:page controller="PropertyController">
+    <apex:form >
+    <apex:sectionHeader title="Details of {!name}"/>
+    <apex:pageBlock title="Main Details">
+    	<apex:pageBlockSection columns="2">
+        	<apex:pageBlockSectionItem >
+            	<apex:outputLabel >Name</apex:outputLabel>
+                <apex:outputText >{!name}</apex:outputText>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            	<apex:outputLabel >City</apex:outputLabel>
+                <apex:outputText >{!city}</apex:outputText>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            	<apex:outputLabel >Company</apex:outputLabel>
+                <apex:outputText >{!Company}</apex:outputText>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+      <apex:pageBlock title="Other Details">  
+        <apex:pageBlockSection columns="1">
+        	<apex:pageBlockSectionItem >
+            	<apex:outputLabel >is Experienced?</apex:outputLabel>
+                <apex:outputText >{!experienced}</apex:outputText>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            	<apex:outputLabel >CTC</apex:outputLabel>
+                <apex:outputText >10 Lakhs</apex:outputText>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

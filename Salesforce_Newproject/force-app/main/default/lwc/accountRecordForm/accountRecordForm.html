@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Account Record Form">
+        <div class="slds-p-around-medium">
+            <lightning-record-form object-api-name="Account" record-id={recordId} columns="2"
+                layout-type="Full" mode="edit" onsuccess={successHandler}></lightning-record-form>
+            <!--<lightning-record-form object-api-name="Account" record-id={recordId} columns="2"
+                fields={fieldsArray} mode="edit" onsuccess={successHandler}></lightning-record-form>-->
+        </div>
+    </lightning-card>
+</template>
+
+<!--Here, we are declaring the fields in fieldsArray(in JS) property that we want to use. Instead of declaring fields 
+we could have also used "layout-type" property and we could give it "Full" or "Compact" as value.
+Ex: layout-type="Full" in place of fileds={fieldsArray}. If we give "Full" as layout-item's value then
+our form will load all the fields which are there in the full page layout and if we give compact as value then
+our record type will only pick those fields which are present in the compact layout.
+
+If we are layout-type then we don't need to declare any fields in our js.
+
+It is preferrable to record-form when we want to create or view any existing record because less js is needed
+,no complex markup is needed and everything is being taken care by just "lightning-record-form"-->

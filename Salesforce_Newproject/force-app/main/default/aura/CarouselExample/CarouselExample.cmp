@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	<lightning:carousel disableAutoScroll="false">
+     <lightning:carouselImage
+        class="img"
+        header="BOOK REPAIR SERVICE"
+        description="Select your device and book repair service as per your requirement."
+        src="{!$Resource.MobileRepair}"
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        class="img"
+        src="{!$Resource.Courier}"
+        header="FREE PICKUP OF YOUR DEVICE"
+        description="Our executive partner will pick your device right from the comfort of your home or office."
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        class="img"
+        src="{!$Resource.MobileRepairLab}"
+        header="REPAIR AT OUR LAB"
+        description="Our expert technical team will diagnose and fix your device to perfection."
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        class="img"
+        src="{!$Resource.FastDelivery}"
+        header="FREE AND FAST RETURN"
+        description="Your repaired device will be delivered to you in 2-5 days depending on the location and the repair type."
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+   </lightning:carousel>
+</aura:component>

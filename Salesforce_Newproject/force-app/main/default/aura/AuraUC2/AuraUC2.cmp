@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="EmployeeName" type="String"/>
+    <aura:attribute name="City" type="String"/>
+    <aura:attribute name="Age" type="Integer"/>
+    
+    <h1>Employee Name={!v.EmployeeName}</h1>
+    <h1>City={!v.City}</h1>
+    <h1>Age={!v.Age}</h1>
+    
+    <lightning:input label="Enter Name" value="{!v.EmployeeName}"/>
+    <lightning:input label="Enter City" value="{!v.City}"/>
+    <lightning:input label="Enter Age" value="{!v.Age}"/>
+    <lightning:button label="Submit" onclick="{!c.handleSubmit}"/>
+	
+</aura:component>

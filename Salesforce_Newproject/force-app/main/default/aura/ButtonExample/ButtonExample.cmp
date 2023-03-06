@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <lightning:button label="Save" variant="brand" iconName="utility:edit" onclick="{!c.submit}" />
+    <lightning:button label="Cancel" variant="destructive" iconName="utility:warning"/>
+    <lightning:button label="Delete" variant="inverse" iconName="action:delete"/>
+	
+</aura:component>

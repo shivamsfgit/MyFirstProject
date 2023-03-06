@@ -1,0 +1,9 @@
+<apex:page controller="getterExample">
+    {!name} <br/>
+    {!city} <br/>
+    {!country}
+    <apex:form >        
+    	<apex:inputText value="{!country}"/>
+        <apex:commandButton value="click"/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:registerEvent name="empEvent" type="c:employeeEvent"></aura:registerEvent>
+    <lightning:button onclick="{!c.handleClick}" variant="destructive" label="fire by Red"></lightning:button>
+	<p style="color:red">This is RED component</p>
+    <aura:handler name="empEvent" event="c:employeeEvent" action="{!c.doHandle}"></aura:handler>
+</aura:component>

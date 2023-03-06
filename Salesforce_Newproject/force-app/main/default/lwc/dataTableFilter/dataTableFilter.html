@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Datatable Example" icon-name="custom:custom63">
+        <div style="width:200px; padding:0.5rem;">
+            <lightning-combobox name="filter"
+                                label="Status"
+                                value={selectedValue}
+                                variant="label-hidden"
+                                options={options}
+                                onchange={handleChange}
+                                placeholder="Show Opportunity Closing"></lightning-combobox>
+        </div>
+        <div class="slds-m-around_medium">
+            <template if:true={opp.data}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={opp.data}
+                    columns={columns}
+                    onsave={handleSave}
+                    draft-values={draftValues}
+                    onrowaction = {handleRowAction}>
+                </lightning-datatable>
+            </template>
+            <template if:true={opp.error}>
+                <!-- handle Apex error -->
+            </template>
+        </div>
+    </lightning-card>
+</template>

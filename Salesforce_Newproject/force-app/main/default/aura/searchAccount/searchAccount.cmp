@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="searchText" type="String"></aura:attribute>
+    <lightning:layout>
+        <lightning:layoutItem size="1">
+            <lightning:input label="Enter Name" value="{!v.searchText}"></lightning:input>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="2" padding="around-large">
+            <lightning:button label="Search Account" variant="brand" onclick="{!c.handleSearch}"></lightning:button>
+        </lightning:layoutItem>
+    </lightning:layout>   
+</aura:component>

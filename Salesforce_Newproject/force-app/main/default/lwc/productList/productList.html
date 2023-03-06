@@ -1,0 +1,8 @@
+<template>
+    <template for:each={products} for:item="p">
+        <p key={p}>
+            Product Name: {p}
+            <c-product-line-item prod={p}></c-product-line-item>
+        </p>
+    </template>
+</template>

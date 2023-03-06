@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Account List Lwc">
+        <p class="slds-p-horizontal_small">
+            <template for:each={accounts.data} for:item="act" >
+                <div key={act.Id}>
+                    <a href="#" data-accid={act.Id} onclick={handleClick}>{act.Name}</a>
+                </div>
+            </template>
+        </p>
+    </lightning-card>
+</template>

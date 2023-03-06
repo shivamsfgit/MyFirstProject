@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Hello World Again">
+        <p>Shivam,Subham,Gourav</p>
+        <div style="color:Red">hey {dynamicElement}</div>
+        <lightning-input label="Enter name here" onchange={dynamicElementHandler}></lightning-input>
+    </lightning-card>
+    ---Conditional Rendering---
+    
+        <lightning-input type="checkbox" label="Show text" onchange={showTextHandler}></lightning-input>
+        <template if:true={showText}>
+            <div>I will be visible when you check the checkbox.</div>
+        </template>
+        <template if:false={showText}>
+            <div>Check the box to see the text.</div>
+        </template>
+    
+</template>

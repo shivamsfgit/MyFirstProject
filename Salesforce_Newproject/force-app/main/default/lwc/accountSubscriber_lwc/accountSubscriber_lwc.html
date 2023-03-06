@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Lwc Subscriber">
+        <p class="slds-p-horizontal_small">
+            <lightning-record-form
+                record-id={accountId}
+                object-api-name={objectApiName}
+                fields={fields}
+                columns="2"
+                mode="view">
+            </lightning-record-form>
+            <b>{receivedMessage}</b>
+        </p>
+    </lightning-card>
+</template>

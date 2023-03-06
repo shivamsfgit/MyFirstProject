@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Lightning Combobox with values from Account object's Industry picklist field and warning modal popup."
+                            icon-name="standard:account_info">
+        <p class="slds-p-horizontal_small">
+            <lightning-combobox
+                name= "filter"
+                label= "Industry"
+                value= {selectedValue}
+                options= {options}
+                onchange= {handlePicklistChange}
+                placeholder= "Select Industry"
+                read-only= {readOnlyBool}>
+            </lightning-combobox>
+        </p>
+        <p slot= "footer">
+            <lightning-button onclick={enablePicklist} label="Enable"></lightning-button>
+            <lightning-button onclick={disablePicklist} label="Disable"></lightning-button>
+        </p>
+    </lightning-card>
+</template>

@@ -1,0 +1,39 @@
+<apex:page >
+    <apex:form >        
+        <apex:pageBlock title="Employee" tabStyle="Lead">            
+            <apex:sectionHeader title="column - 2" subtitle="without pageBlockSectionItem"/>
+            <apex:pageBlockSection title="Personal Details" columns="2">
+                <apex:outputLabel >Name</apex:outputLabel>
+                <apex:inputText />
+                <apex:outputLabel >City</apex:outputLabel>
+                <apex:inputText />
+            </apex:pageBlockSection>
+            
+            <apex:sectionHeader title="column - 4" subtitle="without pageBlockSectionItem"/>
+            <apex:pageBlockSection title="Personal Details" columns="4">
+                <apex:outputLabel >Name</apex:outputLabel>
+                <apex:inputText />
+                <apex:outputLabel >City</apex:outputLabel>
+                <apex:inputText />
+            </apex:pageBlockSection>
+            
+            <apex:sectionHeader title="column - 1" subtitle="pageBlockSectionItem"/>
+            <apex:pageBlockSection title="Personal Details" columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Name</apex:outputLabel>
+                    <apex:inputText />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >City</apex:outputLabel>
+                    <apex:inputText />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:sectionHeader title="collapsible" subtitle="true/false - to make the section collapsible"/>
+             <apex:pageBlockSection title="Experience Details" columns="1" collapsible="false">
+            
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

@@ -1,0 +1,13 @@
+<apex:page >
+    <apex:form >
+    	<apex:pageBlock title="Different Input Components">
+            Name: <apex:inputText />  <br/><br/>
+            Address: <apex:inputTextarea /> <br/><br/>
+            About Me: <apex:inputTextarea rows="10"/><br/><br/>
+            Yes/No:  <apex:inputCheckbox />  <br/><br/>
+            Password: <apex:inputSecret /><br/><br/>
+            <apex:outputLabel >Password1:</apex:outputLabel>
+            <apex:inputSecret />
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

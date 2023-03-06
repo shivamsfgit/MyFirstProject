@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <div class="box">
+        <lightning:card>
+        </lightning:card>
+        
+        
+        <lightning:card title="Student" iconName="standard:contact">
+            <h1>Student Name</h1>
+            <aura:set attribute="actions">
+                <lightning:button label="Save"/>
+                <lightning:button label="Cancel"/>
+                <lightning:button label="Edit"/>
+                <lightning:button label="Brand" variant="brand"/>
+                <lightning:button label="Download" variant="success" iconName="utility:down" />
+                <lightning:button label="Approval" variant="success" iconName="action:approval"  />
+                <lightning:buttonMenu>
+                    <lightning:menuItem label="New Case"/>
+                    <lightning:menuItem label="New Task"/>
+                </lightning:buttonMenu>
+            </aura:set>
+            <lightning:card footer="Copyright@2021"/>
+        </lightning:card>
+    </div>
+</aura:component>

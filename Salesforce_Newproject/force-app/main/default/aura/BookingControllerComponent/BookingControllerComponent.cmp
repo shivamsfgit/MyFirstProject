@@ -1,0 +1,39 @@
+<aura:component controller="BookingController" implements="force:appHostable">
+    <aura:attribute name="recordId" type="Booking__c" />
+    <aura:attribute name="bookings" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    
+    <!-- Use the Apex model and controller to fetch server side data -->
+    <table class="slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer">
+        
+        <thead>
+            <tr class="slds-text-heading--small">
+                <th scope="col"><span class="slds-truncate">Booking No</span></th>
+                <th scope="col"><span class="slds-truncate">Customer Name</span></th>
+                <th scope="col"><span class="slds-truncate">Booking Date Time</span></th>
+                <th scope="col"><span class="slds-truncate">Service Type</span></th>
+                <th scope="col"><span class="slds-truncate">Issue</span></th>
+                <th scope="col"><span class="slds-truncate">Status</span></th>
+                
+            </tr>
+            
+        </thead>
+        
+        
+        <tbody>
+            <aura:iteration items="{!v.bookings}" var="booking">
+                <tr>
+                    
+                    <th scope="row">{!booking.Name}</th>
+                    <td>{!booking.Customer__r.Name}</td>
+                    <td>{!booking.Booking_Date_Time__c}</td>
+                    <td>{!booking.Service_Type__c}</td>
+                    <td>{!booking.Issue__c}</td>
+                    <td>{!booking.Status__c}</td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    
+</aura:component>

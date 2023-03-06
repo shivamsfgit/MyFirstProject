@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Contact" icon-name="standard:contact">
+        <p slot="actions"> 
+            <lightning-button label="save" variant="brand" onclick={handleChange}></lightning-button>
+        </p>
+        <h1>LWC Training</h1>
+        delivered by {name}
+        <template for:each={products} for:item="p">
+            <li key={p}>{p}</li>
+        </template>
+
+        <p slot="footer">copyRight @2022</p>
+    </lightning-card>
+</template>

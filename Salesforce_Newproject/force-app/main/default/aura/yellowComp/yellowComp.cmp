@@ -1,0 +1,4 @@
+<aura:component >
+	<p style="color:yellow">This is YELLOW component</p>
+    <aura:handler name="empEvent" event="c:employeeEvent" action="{!c.doHandle}"></aura:handler>
+</aura:component>

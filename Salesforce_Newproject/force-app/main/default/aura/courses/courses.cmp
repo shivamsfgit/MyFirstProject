@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<ol>
+    	<li>SFDC Dev</li>
+        <li>SFDC Admin</li>
+        <li>Aura</li>
+        <li>LWC</li>
+        <li>Integration</li>
+        <li>Java</li>
+        <li>DotNet</li>
+    </ol>
+    <div class="box">
+    <ul>
+    	<lightning:card title="SFDC Dev" iconName="standard:employee_job"/>
+        <lightning:card title="SFDC Admin" iconName="standard:employee_job"/>
+    	<lightning:card title="Aura" iconName="standard:employee_job"/>
+        <lightning:card title="LWC" iconName="standard:employee_job"/>
+        <lightning:card title="Integration" iconName="standard:employee_job"/>
+        <lightning:card title="Java" iconName="standard:employee_job"/>
+        <lightning:card title="DotNet" iconName="standard:employee_job"/>
+    
+    </ul>
+    </div>
+    
+</aura:component>

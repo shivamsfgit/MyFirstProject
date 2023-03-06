@@ -1,0 +1,15 @@
+.txtbox{
+    display: block;
+    float: left;
+    height: 32px;
+    width: 350px;
+}
+
+.btncls{
+    font-size: 10px;
+    border: 0;           
+    height: 32px;
+    color: white;
+    margin: 0;         
+    float:left;
+   }
