@@ -1,5 +1,6 @@
 global class AccountBatchApex implements Database.Batchable<SObject>,Database.Stateful
 {
+    //Adding comment to test repository
     global integer numberOfDirectCustomers = 0;
     global Database.QueryLocator start(Database.BatchableContext bc)
         {
